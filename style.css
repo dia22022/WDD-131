@@ -1,0 +1,36 @@
+body {
+    font-family: "Times New Roman", 'Times New Roman', Times, serif;
+    /* width: 600px;   */
+    
+}
+.byui {
+    color: #006EB6;
+    letter-spacing: 4px;
+    border-bottom: .25px solid grey;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+h1 {
+    letter-spacing: 7px;
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+main {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 350px;
+    margin-right: 320px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
