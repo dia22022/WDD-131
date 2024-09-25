@@ -1,6 +1,8 @@
 body {
     font-family: "Times New Roman", 'Times New Roman', Times, serif;
     /* width: 600px;   */
+    background-color:#333;
+    color: white;
     
 }
 .byui {
