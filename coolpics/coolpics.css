@@ -7,8 +7,16 @@ body {
 }
 a:link,
 a:visited {
-  color: darkblue;
+  color: white;
+  text-decoration: none;
 }
+.nav {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   text-align: center;
   background-color: var(--primary-color);
@@ -27,6 +35,14 @@ img {
   width: 250px;
   object-fit: cover;
 }
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-light);
+  font-size: 1.2em;
+  display: none;
+  cursor: pointer;
+}
 @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
  :root {
  --primary-color: #52489c;
@@ -37,8 +53,17 @@ img {
  --primary-font: Arial, Helvetica,sans-serif;
  --secondary-font: Mooli, san-serif;
  }
-  
-@media screen and (min-width: 1000px) {
+ .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin-right:auto;
+  margin-left: auto;
+}
+ button {
+    display: none;
+  }
+@media screen and (max-width: 1000px) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,13 +71,42 @@ img {
     margin-right:auto;
     margin-left: auto;
   }
+ 
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 700px) {
   .gallery {
     display: grid;
     width: 80%;
     margin-right:auto;
     margin-left: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    
+  }
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    display: none;
+  }
+  button {
+    display: inline-block;
   }
 }
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+/*.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  grid-template-columns: auto;
+  max-height: 100%;
+}
+.close-viewer{
+  color: var(--text-light);
+}*/
