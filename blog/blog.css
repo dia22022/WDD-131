@@ -11,10 +11,7 @@ h1 {
     font-family: "Lora", serif;
     color: #473144;
 }
-/* .title {
-    font-family: Lora, Impact, Haettenschweiler, sans-serif;
-    color: #AF1B3F;
-} */
+
 a {
     color: #AF1B3F;
     text-decoration: none;
@@ -28,8 +25,6 @@ ul {
     list-style: none;
 }
 nav {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     align-items: start;
     border-top: 1px solid #EFC69B;
     border-bottom: 1px solid #EFC69B;
@@ -39,4 +34,38 @@ nav {
 }
 p {
     font-size: 12px;
+}
+.title {
+    font-family: Lora, Impact, Haettenschweiler, sans-serif;
+    font-size: 20px;
+    color: #AF1B3F;
+    margin-top: 5px;
+}
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+.left-info {
+    text-align: right;
+    border-right: solid 1px #EFC69B;
+    padding-right: 10px;
+}
+.right-info {
+    text-align: center;
+
+}
+.right-info p, .right-info h2 {
+    text-align: left;
+}
+#filter {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    border: solid 1px #EFC69B;
+    padding: 7px;
+}
+#main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
