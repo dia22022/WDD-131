@@ -1,0 +1,225 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+/* Global Styles */
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Amatic SC";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply fonts */
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: var(--text-dark);
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+/* Search Form */
+.search-form {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.search-form form {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Recipe Section */
+.recipe {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+.recipe h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    margin: 20px 0;
+}
+
+.recipe h3 {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.recipe ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe ul li {
+    padding: 5px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.recipe ol {
+    padding-left: 20px;
+}
+
+.recipe ol li {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Rating Section */
+.rating {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 1.5em;
+}
+
+.icon-star {
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.icon-star-empty {
+    color: #ddd; /* Light gray color for empty stars */
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.6em;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile and small screen styles (up to 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-form form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .recipe {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .rating {
+        justify-content: center;
+    }
+}
+
+/* Medium Screen Styles (600px to 960px) */
+@media (min-width: 600px) and (max-width: 960px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search-form form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .recipe {
+        max-width: 80%;
+    }
+}
+
+/* Large Screen Styles (960px and up) */
+@media (min-width: 960px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .recipe {
+        max-width: 960px;
+        margin: 30px auto;
+    }
+}
