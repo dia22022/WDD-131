@@ -279,5 +279,15 @@ const recipes = [
 		rating: 4
 	}
 ]
+export const recipes = [
+    { 
+        name: "Spaghetti Bolognese", 
+        rating: 4, 
+        tags: ["Italian", "Dinner"], 
+        description: "A classic Italian pasta dish with rich meat sauce." 
+    },
+    // Add more recipe objects...
+];
 
 export default recipes
+
